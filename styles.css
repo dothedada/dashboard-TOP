@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rethink%20Sans:700|Roboto%20Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Fira%20Code:400|Rethink%20Sans:400');
 
 /* :root[data-theme="light"] {
     --text: #0b1d1e;
@@ -20,15 +20,15 @@ html {
     font-size: 100%;
 }
 body {
-    font-family: 'Roboto Mono';
+    font-family: 'Rethink Sans';
     font-weight: 400;
     background-color: var(--background);
     color: var(--text);
 }
 
 h1, h2, h3 {
-    font-family: 'Rethink Sans';
-    font-weight: 700;
+    font-family: 'Fira Code';
+    font-weight: 400;
 }
 h1 {
     font-size: 2.489rem;
