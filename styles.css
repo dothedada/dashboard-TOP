@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fira%20Code:400|Rethink%20Sans:400');
 
-/* :root[data-theme="light"] {
-    --text: #0b1d1e;
-    --background: #e9f6f6;
-    --primary: #24d0e0;
-    --secondary: #ec79c4;
-    --accent: #ff8785;
-} */
-/* :root[data-theme="dark"] { */
 :root {
     --text: #e1f3f4;
     --background: #091616;
     --primary: #1fcbdb;
     --secondary: #86135e;
     --accent: #7a0200;
+}
+:has(#theme:checked) {
+    --text: #0b1d1e;
+    --background: #e9f6f6;
+    --primary: #24d0e0;
+    --secondary: #ec79c4;
+    --accent: #ff8785;
 }
 
 html {
@@ -41,4 +40,42 @@ h3 {
 }
 small {
     font-size: 0.833rem;
+}
+
+.selector-color > fieldset {
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: var(--background);
+}
+
+.selector-color input[type="checkbox"] {
+    display: none;
+}
+.selector-color input[type="checkbox"]:checked ~ label span:nth-child(2) {
+    display: inline;
+}
+.selector-color input[type="checkbox"]:checked ~ label span:last-child {
+    display: none;
+}
+.selector-color input[type="checkbox"]:not(:checked) ~ label span:nth-child(2){
+    display: none;
+}
+.selector-color input[type="checkbox"]:not(:checked) ~ label span:last-child {
+    display: inline;
+}
+
+.selector-color label:hover {
+    color: var(--secondary);
+}
+.oculto-vista {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
