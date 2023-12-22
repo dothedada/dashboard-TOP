@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Rethink%20Sans:700|Roboto%20Mono:400');
+
+/* :root[data-theme="light"] {
+    --text: #0b1d1e;
+    --background: #e9f6f6;
+    --primary: #24d0e0;
+    --secondary: #ec79c4;
+    --accent: #ff8785;
+} */
+/* :root[data-theme="dark"] { */
+:root {
+    --text: #e1f3f4;
+    --background: #091616;
+    --primary: #1fcbdb;
+    --secondary: #86135e;
+    --accent: #7a0200;
+}
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    font-family: 'Rethink Sans';
+    font-weight: 700;
+}
+h1 {
+    font-size: 4.210rem;
+}
+h2 {
+    font-size: 3.158rem;
+}
+h3 {
+    font-size: 2.369rem;
+}
+small {
+    font-size: 0.750rem;
+}
