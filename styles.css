@@ -63,13 +63,13 @@ nav {
     padding: 1rem 2rem 3rem;
     border-right: solid 1px var(--primary);
 
-    .logo {
+    & .logo {
         width: 100px;
         fill: var(--primary);
         margin: 0 0 1rem;
     }
 
-    .menu {
+    & .menu {
         list-style: none;
         font-size: 1.2rem;
 
@@ -77,11 +77,11 @@ nav {
             align-self: end;
         }
 
-        li {
+        & li {
             margin: 0.4rem 0;
         }
 
-        a {
+        & a {
             display: flex;
             gap: 1rem;
             align-items: center;
@@ -94,7 +94,7 @@ nav {
             }
         }
 
-        svg {
+        & svg {
             width: 1.8rem;
         }
     }
@@ -109,7 +109,7 @@ header {
     gap: 1rem;
     color: var(--background);
 
-    form {
+    & form {
         display: flex;
         height: 2rem;
         padding: 0.2rem;
@@ -117,7 +117,7 @@ header {
         border: none;
         border-radius: 0.6rem;
 
-        input {
+        & input {
             flex: 1;
             background: none;
             border: none;
@@ -129,7 +129,7 @@ header {
             }
         }
 
-        button {
+        & button {
             border: none;
             color: var(--primary);
             background: none;
@@ -150,13 +150,13 @@ header {
         display: flex;
     }
 
-    .usuario {
+    & .usuario {
         align-items: center;
         justify-content: flex-end;
         gap: 1rem;
 
-        button,
-        a {
+        & button,
+        & a {
             background: none;
             color: var(--background);
             border: none;
@@ -167,30 +167,30 @@ header {
                 text-decoration: underline;
             }
         }
-        img {
+        & img {
             width: 2rem;
             height: 2rem;
             border-radius: 25%;
         }
     }
 
-    .saludo {
+    & .saludo {
         gap: 1rem;
         align-items: center;
 
-        img {
+        & img {
             border-radius: 50%;
             width: 60px;
             height: 60px;
         }
     }
 
-    > div:last-child {
+    & > div:last-child {
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
 
-        button {
+        & button {
             padding: 0 0.7rem;
             height: 2rem;
             background: none;
@@ -212,31 +212,31 @@ header {
     gap: 2rem;
 
 
-    aside {
+    & aside {
         display: grid;
         grid-auto-rows: min-content;
         gap: 2rem;
 
 
-        > div > div{
+        & > div > div{
             padding: 1rem;
             border: solid 1px var(--primary);
             margin: 0 0 0.4rem;
         }
 
-        > div:last-child {
+        & > div:last-child {
             div {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
 
-                img {
+                & img {
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
                 }
 
-                span {
+                & span {
                     text-decoration: underline;
                 }
             }
@@ -251,11 +251,11 @@ main {
     grid-auto-rows: min-content;
     column-gap: 2rem;
 
-    h2 {
+    & h2 {
         grid-column: 1 / -1;
     }
 
-    > div {
+    & > div {
         margin: 0 0 3rem;
         padding: 0.4rem 0.2rem 1rem 0.6rem;
         border-left: solid 0.4rem var(--secondary);
@@ -264,11 +264,11 @@ main {
         display: flex;
         flex-direction: column;
 
-        .acciones {
+        & .acciones {
             align-self: flex-end;
             margin: 1rem 0 0;
 
-            button {
+            & button {
                 color: var(--primary);
                 margin: 0 0.2rem;
                 background: none;
